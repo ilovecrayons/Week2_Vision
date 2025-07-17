@@ -17,7 +17,7 @@ class ImageSaver(Node):
         self.frame_count = 0
         self.save_count = 0
 
-        self.frame_interval = 10  
+        self.frame_interval = 2  
         self.output_dir = "frames"
         os.makedirs(self.output_dir, exist_ok=True)
         self.get_logger().info(f"Saving frames at interval of {self.frame_interval} to {self.output_dir}")
